@@ -3,7 +3,7 @@ const reducer = (state = {people: []}, action) => {
         case "add":
             return {people: [...state.people, action.payload]};
         case "remove":
-            return {people: people.filter((person) => person !== action.payload)}
+            return {people: state.people.filter((person) => person !== action.payload)}
         default: 
             return state
     }

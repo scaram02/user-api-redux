@@ -10,7 +10,7 @@ export const addToFaves = id => {
 export const removeFromFaves = id => {
     return dispatch => {
         dispatch({
-            type: 'add',
+            type: 'remove',
             payload: id
         })
     }
